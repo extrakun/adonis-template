@@ -34,6 +34,15 @@ class SightingController {
     let detailId = context.params.detail_id;
     return context.view.render('sighting-details')
   }
+
+  create({view}) {
+    return view.render('sighting-create')
+  }
+
+  processCreate({request}) {
+    let sighting = request.post();
+    return sighting;
+  }
 }
 
 module.exports = SightingController

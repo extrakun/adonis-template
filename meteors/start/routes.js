@@ -37,3 +37,5 @@ Route.get('special/', ()=>{
 Route.get('sightings/', 'SightingController.index')
 Route.get('sightings/about', 'SightingController.about')
 Route.get('sightings/details/:detail_id/view', 'SightingController.details')
+Route.get('sightings/create', 'SightingController.create')
+Route.post('sightings/create','SightingController.processCreate')
